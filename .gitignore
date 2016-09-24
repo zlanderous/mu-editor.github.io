@@ -8,3 +8,8 @@ Thumbs.db
 
 .rbenv-version
 .rvmrc
+
+# Editors/IDEs
+.idea/
+npp.session
+.editorconfig
