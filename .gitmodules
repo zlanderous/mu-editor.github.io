@@ -1,0 +1,12 @@
+[submodule "help/0.1"]
+	path = help/0.1
+	url = https://github.com/mu-editor/help-pages.git
+[submodule "help/0.9.11"]
+	path = help/0.9.11
+	url = https://github.com/mu-editor/help-pages.git
+[submodule "help/0.9.12"]
+	path = help/0.9.12
+	url = https://github.com/mu-editor/help-pages.git
+[submodule "help/0.9.13"]
+	path = help/0.9.13
+	url = https://github.com/mu-editor/help-pages.git
