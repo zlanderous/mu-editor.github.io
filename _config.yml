@@ -28,11 +28,6 @@ github-fork-path: https://github.com/mu-editor/mu
 
 gems: ["jekyll-sitemap"]
 
-pages:
-- title: help
-  url: help/0.9.11
-
-
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
