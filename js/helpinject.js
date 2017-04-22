@@ -1,9 +1,6 @@
 /**
  * @fileoverview This file executes on load and is meant to check if the help
  *     page is the latest version and inject warnings into the page if not.
- * 
- * Changes:
- *   - 2017/04/22: Use the GitHub Releases API to check if this is the lastest documentation
  */
 
 'use strict';
@@ -36,25 +33,52 @@
   };
 
   var getLatestReleaseVersion = function(cb) {
+    // Setup a dummy console if window.console.error is unavaliable
+    if (typeof console === "undefined") window.console = {};
+    if (typeof console.error === "undefined") {
+      console.error = function () {
+        // Do nothing
+      };
+    }
+    // Set a simple callback if none was provided
+    if (typeof cb === "undefined") {
+      cb = function (ver) {
+        console.error('Latest Version is: ' + ver + '. No callback provided.');
+      };
+    }
     // On the basis Mu doesn't run on XP, IE6 support is irrelavent
     var xhr = new XMLHttpRequest();
     // We want the lastest release (doesn't include draft or preview releases)
     xhr.open('GET', 'https://api.github.com/repos/mu-editor/mu/releases/latest');
     xhr.onload = function() {
-      // We got the data
-      if (xhr.status === 200) {
-        // IE6 & IE7 support is superfluous
-        try {
-          var lastest = JSON.parse(xhr.responseText);
-          // Run the callback
-          cb(semverRegex().test(lastest.tag_name) ? semverRegex().exec(lastest.tag_name)[0] : null);
-        } catch (e) {
-          if (console && console.error) console.error('Unable to parse release information', e);
+      // The request compleated
+      if (xhr.readyState == 4) {
+        // We got the data
+        if (xhr.status === 200) {
+          var lastest = {};
+          try {
+            // IE6 & IE7 support is superfluous
+            lastest = JSON.parse(xhr.responseText);
+          } catch (e) {
+            console.error('Unable to parse release information', e);
+          }
+          if (typeof lastest.tag_name !== "undefined") {
+            // Drop the 'v' from the start of the tag name
+            var version = lastest.tag_name.substr(0, 1) == 'v' ? lastest.tag_name.substr(1) : lastest.tag_name;
+            // Run the callback
+            cb(semverRegex().test(version) ? semverRegex().exec(version)[0] : null);
+          } else {
+            console.error('GitHub did not return the expected data');
+          }
+        } else {
+          // Something went wrong. Fail quietly
+          console.error('Unable to fetch release information');
         }
-      } else {
-        // Something went wrong. Fail quietly
-        if (console && console.error) console.error('Unable to fetch release information');
       }
+    };
+    // Unable to fetch (Blocked by filter, CORs or network error)
+    xhr.onerror = function (err) {
+      console.error('Unable to fetch release information', err);
     };
     // Send the request
     xhr.send();
@@ -86,7 +110,7 @@
               '  <p><a href="/help">View documentation for latest version of Mu.</a></p>',
               '</div>'].join('\n');
         }
-	  });
+      });
     }
   });
 })();
