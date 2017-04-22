@@ -1,7 +1,9 @@
 /**
  * @fileoverview This file executes on load and is meant to check if the help
  *     page is the latest version and inject warnings into the page if not.
- * TODO: Need to use GitHub API to retrieve latest version published
+ * 
+ * Changes:
+ *   - 2017/04/22: Use the GitHub Releases API to check if this is the lastest documentation
  */
 
 'use strict';
@@ -33,10 +35,29 @@
     return null;
   };
 
-  var getLatestReleaseVersion = function() {
-    // TODO: This is a hard-coded version string, need to use GH API instead
-    var version = "0.9.13";
-    return semverRegex().test(version) ? semverRegex().exec(version)[0] : null;
+  var getLatestReleaseVersion = function(cb) {
+    // On the basis Mu doesn't run on XP, IE6 support is irrelavent
+    var xhr = new XMLHttpRequest();
+    // We want the lastest release (doesn't include draft or preview releases)
+    xhr.open('GET', 'https://api.github.com/repos/mu-editor/mu/releases/latest');
+    xhr.onload = function() {
+      // We got the data
+      if (xhr.status === 200) {
+        // IE6 & IE7 support is superfluous
+        try {
+          var lastest = JSON.parse(xhr.responseText);
+          // Run the callback
+          cb(semverRegex().test(lastest.tag_name) ? semverRegex().exec(lastest.tag_name)[0] : null);
+        } catch (e) {
+          if (console && console.error) console.error('Unable to parse release information', e);
+        }
+      } else {
+        // Something went wrong. Fail quietly
+        if (console && console.error) console.error('Unable to fetch release information');
+      }
+    };
+    // Send the request
+    xhr.send();
   };
 
   var isVersionLowerThan = function(baseVersion, compareVersion) {
@@ -52,19 +73,20 @@
     var helpInjectDiv = document.getElementById('mu-help-header-inject');
     if (helpInjectDiv) {
       var urlVersion = getUrlVersion();
-      var latestVersion = getLatestReleaseVersion();
-      if (urlVersion && latestVersion && isVersionLowerThan(urlVersion, latestVersion)) {
-        helpInjectDiv.innerHTML = [
-            '<div class="alert alert-danger" role="alert">',
-            '  <h2><strong>Update Mu!</strong></h2>',
-            '  <p>You appear to be using an old version of Mu. Please <a href="https://codewith.mu" target="_blank">download the latest version</a>.</p>',
-            '</div>',
-            '<div role="alert" class="alert alert-warning">',
-            '  <h2><strong>This is not the latest Documentation!</strong></h2>',
-            '  <p>This documentation corresponds to the Mu version you are using, however documentation for newer versions of Mu might contain more content and troubleshooting information.</p>',
-            '  <p><a href="/help">View documentation for newest versions of Mu.</a></p>',
-            '</div>'].join('\n');
-      }
+      getLatestReleaseVersion(function (latestVersion) {
+        if (urlVersion && latestVersion && isVersionLowerThan(urlVersion, latestVersion)) {
+          helpInjectDiv.innerHTML = [
+              '<div class="alert alert-danger" role="alert">',
+              '  <h2><strong>Update Mu!</strong></h2>',
+              '  <p>You appear to be using an old version of Mu. Please <a href="https://codewith.mu" target="_blank">download the latest version (' + latestVersion + ')</a>.</p>',
+              '</div>',
+              '<div role="alert" class="alert alert-warning">',
+              '  <h2><strong>This is not the latest Documentation!</strong></h2>',
+              '  <p>This documentation corresponds to Mu version (' + urlVersion + ') which seems to be what you are using, however documentation for newer versions of Mu might contain more content and troubleshooting information.</p>',
+              '  <p><a href="/help">View documentation for latest version of Mu.</a></p>',
+              '</div>'].join('\n');
+        }
+	  });
     }
   });
 })();
