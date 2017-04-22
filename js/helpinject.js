@@ -60,12 +60,8 @@
         } catch (e) {
           console.error('Unable to parse release information', e);
         }
-        if (typeof lastest.tag_name !== "undefined") {
-          // Run the callback
-          cb(semverRegex().test(version) ? semverNumbersOnly(semverRegex().exec(version)[0]) : null);
-        } else {
-          console.error('GitHub did not return the expected data');
-        }
+        // Run the callback
+        cb(semverRegex().test(lastest.tag_name) ? semverNumbersOnly(semverRegex().exec(lastest.tag_name)[0]) : null);
       } else {
         // Something went wrong. Fail quietly
         console.error('Unable to fetch release information');
