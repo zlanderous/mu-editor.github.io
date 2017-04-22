@@ -51,29 +51,26 @@
     // We want the lastest release (doesn't include draft or preview releases)
     xhr.open('GET', 'https://api.github.com/repos/mu-editor/mu/releases/latest');
     xhr.onload = function() {
-      // The request compleated
-      if (xhr.readyState == 4) {
-        // We got the data
-        if (xhr.status === 200) {
-          var lastest = {};
-          try {
-            // IE6 & IE7 support is superfluous
-            lastest = JSON.parse(xhr.responseText);
-          } catch (e) {
-            console.error('Unable to parse release information', e);
-          }
-          if (typeof lastest.tag_name !== "undefined") {
-            // Drop the 'v' from the start of the tag name
-            var version = lastest.tag_name.substr(0, 1) == 'v' ? lastest.tag_name.substr(1) : lastest.tag_name;
-            // Run the callback
-            cb(semverRegex().test(version) ? semverRegex().exec(version)[0] : null);
-          } else {
-            console.error('GitHub did not return the expected data');
-          }
-        } else {
-          // Something went wrong. Fail quietly
-          console.error('Unable to fetch release information');
+      // We got the data
+      if (xhr.status === 200) {
+        var lastest = {};
+        try {
+          // IE6 & IE7 support is superfluous
+          lastest = JSON.parse(xhr.responseText);
+        } catch (e) {
+          console.error('Unable to parse release information', e);
         }
+        if (typeof lastest.tag_name !== "undefined") {
+          // Drop the 'v' from the start of the tag name
+          var version = lastest.tag_name.substr(0, 1) == 'v' ? lastest.tag_name.substr(1) : lastest.tag_name;
+          // Run the callback
+          cb(semverRegex().test(version) ? semverRegex().exec(version)[0] : null);
+        } else {
+          console.error('GitHub did not return the expected data');
+        }
+      } else {
+        // Something went wrong. Fail quietly
+        console.error('Unable to fetch release information');
       }
     };
     // Unable to fetch (Blocked by filter, CORs or network error)
