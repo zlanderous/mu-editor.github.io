@@ -61,10 +61,8 @@
           console.error('Unable to parse release information', e);
         }
         if (typeof lastest.tag_name !== "undefined") {
-          // Drop the 'v' from the start of the tag name
-          var version = lastest.tag_name.substr(0, 1) == 'v' ? lastest.tag_name.substr(1) : lastest.tag_name;
           // Run the callback
-          cb(semverRegex().test(version) ? semverRegex().exec(version)[0] : null);
+          cb(semverRegex().test(version) ? semverNumbersOnly(semverRegex().exec(version)[0]) : null);
         } else {
           console.error('GitHub did not return the expected data');
         }
