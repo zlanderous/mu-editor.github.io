@@ -21,10 +21,7 @@
     <link href="{{ ASSET_PATH }}/css/bs-sticky-footer.css" rel="stylesheet">
     
     <!-- Custom styles -->
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
-    <link href="{{ ASSET_PATH }}/css/jumbotron-narrow.css" rel="stylesheet">
-
+    <link href="{{ ASSET_PATH }}/css/style.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,35 +37,31 @@
       <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
       <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
     -->
-
-    <!-- atom & rss feed -->
-    <link href="{{ BASE_PATH }}{{ site.JB.atom_path }}" type="application/atom+xml" rel="alternate" title="Sitewide ATOM Feed">
-    <link href="{{ BASE_PATH }}{{ site.JB.rss_path }}" type="application/rss+xml" rel="alternate" title="Sitewide RSS Feed">
-
   </head>
 
   <body>
-    <div id="wrap">
-
-      <a href="{{ site.github-fork-path }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
-
+      {% if page.i18n %}
+        {% include nav_{{ page.i18n }}.html %}
+      {% else %}
+        {% include nav_en.html %}
+      {% endif %}
       <div class="container">
         {{ content }}
       </div>
 
-    </div>
-
-  <div id="footer">
-    <div class="container">
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
-    </div>
-  </div>
-
-    {% include JB/analytics %}
-
-    <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="{{ ASSET_PATH }}/js/bootstrap.min.js"></script>
+      <div id="footer">
+        <div class="container footer">
+          <p>&copy; {{ site.time | date: '%Y' }}
+          <a href="http://ntoll.org/">Nicholas H.Tollervey</a>.
+          Mu wouldn't be possible without
+          <a href="/en/thanks">these people</a>.
+          <span class="glyphicon glyphicon-heart" aria-hidden="true"
+              style="color: #c93827;"></span></p>
+        </div>
+      </div>
+      <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="{{ ASSET_PATH }}/js/bootstrap.min.js"></script>
   </body>
 </html>

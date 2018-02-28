@@ -13,3 +13,5 @@ Thumbs.db
 .idea/
 npp.session
 .editorconfig
+
+*.swp

@@ -54,3 +54,26 @@
   background: #57A957;
   border: 1px solid #4c964d;
   color: #FFF; }
+
+.brand {
+  margin-top: -10px;
+}
+
+.marketing {
+  margin: 40px 0;
+}
+
+.marketing h4 {
+    font-weight: bold;
+}
+
+.movie {
+  border: 1px solid #444;
+}
+
+body { margin-top: 70px; }
+
+.footer {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+}
