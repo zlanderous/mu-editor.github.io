@@ -71,6 +71,10 @@
   border: 1px solid #444;
 }
 
+.movie-light {
+  border: 1px solid #ddd;
+}
+
 body { margin-top: 70px; }
 
 .footer {
