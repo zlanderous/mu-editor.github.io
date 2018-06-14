@@ -9,6 +9,7 @@ You need to understand what each of the following three buttons do:
 
 <div class="row">
   <img src="/img/en/howto/create_load_save.png" alt="New, Load and Save buttons" class="img-responsive center-block img-rounded movie"/>
+  <br/>
 </div>
 
 * **New** - Click on this button to create a new empty file. Before you can run
