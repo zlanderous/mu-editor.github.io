@@ -57,7 +57,7 @@ The buttons are grouped together:
   is a [tutorial about modes](modes) for you to read next.
 
 * File system: The "New", "Load" and "Save" buttons in this group allow you to
-  interact with files on your computers hard drive.
+  interact with files on your computer's hard drive.
   * New: create a new blank file.
   * Load: open a file selector to choose a file to load into Mu.
   * Save: save the file to your computer's hard drive. If the file has no name,
