@@ -68,3 +68,12 @@ Each option is outlined below:
     </div>
   </div>
 </div>
+
+<div class="panel panel-danger">
+    <div class="panel-heading"><h3 class="panel-title">ATTENTION LINUX USERS!</h3></div>
+    <div class="panel-body">
+    <p>On Linux, in order for Mu to work with the MicroPython based devices
+    you need to ensure you add yourself to the correct permissions group
+    (usually the <code>dialout</code> or <code>uucp</code> groups).</p>
+    </div>
+</div>
