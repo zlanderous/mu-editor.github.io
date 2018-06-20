@@ -74,6 +74,8 @@ Each option is outlined below:
     <div class="panel-body">
     <p>On Linux, in order for Mu to work with the MicroPython based devices
     you need to ensure you add yourself to the correct permissions group
-    (usually the <code>dialout</code> or <code>uucp</code> groups).</p>
+    (usually the <code>dialout</code> or <code>uucp</code> groups). Also make
+    sure that your distribution automatically mounts flash devices, or make
+    sure to mount them manually.</p>
     </div>
 </div>
