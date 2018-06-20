@@ -9,7 +9,8 @@ i18n: en
 Since most of our users will be using Mu on Windows in an educational setting
 we've made it extraordinarily easy to install Mu on Windows. We've checked
 Mu works on Windows 7 (32bit) and Windows 10 (64bit) - so it should work on
-all the versions of Windows in between.
+all the versions of Windows in between. We assume you have an up-to-date
+system (i.e. ensure you have installed all updates).
 
 First, follow the
 [advice on Microsoft's website](https://support.microsoft.com/en-us/help/15056/windows-7-32-64-bit-faq) to work out if you're using 32 or 64 bit Windows.
@@ -20,6 +21,38 @@ an executable so you need to run it to make it work.
 
 Follow the steps illustrated below and, once installation has finished, you'll
 find Mu in your start menu.
+
+<div class="panel panel-warning">
+    <div class="panel-heading"><h3 class="panel-title">THIS IS BETA SOFTWARE!</h3></div>
+    <div class="panel-body">
+    <p>Mu is in the closing stages of a final 1.0 release. As a result it is
+    still considered BETA software and this reflects how the installer
+    currently works. Put simply, we currently don't sign the installer so
+    Windows complains about Mu coming from an unknown publisher. When the Mu
+    1.0 is finally released the installer won't have this issue.</p>
+
+    <p>In any case, we've outlined the extra steps needed to help Windows
+    install Mu for both Windows 7 and Windows 10 (other versions of Windows
+    will be similar).</p>
+
+    <h3>Windows 7</h3>
+    <p>Find the installer (it's probably in your "Downloads" folder):</p>
+    <img src="/img/en/howto/beta/win7.1.png" alt="Find the installer" class="img-responsive center-block img-rounded movie"/><br/>
+    <p>Double-click the installer and the message shown below will appear.
+    Click on the "Yes" button and follow the remaining instructions below.</p>
+    <img src="/img/en/howto/beta/win7.2.png" alt="Click Yes" class="img-responsive center-block img-rounded movie"/><br/>
+    <h3>Windows 10</h3>
+    <p>Find the installer (it's probably in your "Downloads" folder):</p>
+    <img src="/img/en/howto/beta/win10.1.png" alt="Find the installer" class="img-responsive center-block img-rounded movie"/><br/>
+    <p>When you double-click the installer Windows Defender will pop up with a
+    warning message. You should click on the "More info" link.</p>
+    <img src="/img/en/howto/beta/win10.2.png" alt="Click More Info" class="img-responsive center-block img-rounded movie"/><br/>
+    <p>The message will change to something similar to that shown below
+    (although the "App" name may be slightly different). Click on the new
+    "Run anyway" button and follow the remaining instructions below.</p>
+    <img src="/img/en/howto/beta/win10.3.png" alt="Click Run Anyway" class="img-responsive center-block img-rounded movie"/><br/>
+    </div>
+</div>
 
 <div class="row">
   <h2>Step 1</h2>

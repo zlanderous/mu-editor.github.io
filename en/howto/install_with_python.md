@@ -6,10 +6,12 @@ i18n: en
 # How to install Mu with Python packaging on Windows, OSX and Linux
 
 If you already have [Python3](https://python.org/) installed on your Windows,
-OSX or Linux machine then the easiest way to install Mu is with Python's
+OSX or Linux machine then it is easy to install Mu with Python's
 built-in package manager, [`pip`](https://pip.pypa.io/en/stable/installing/).
 If you're on Windows and would rather not type commands you should use the
-[Windows installer for Mu](install_windows) instead.
+[Windows installer for Mu](install_windows) instead. If you're using OSX on a
+Mac and want to use the simple drag-and-drop installer instead, you should use
+the [OSX installer for Mu](install_macos).
 
 At your OS's command prompt (see below) type the following command:
 
@@ -50,7 +52,8 @@ Press return and the editor should launch.
         do).</li>
     </ul>
     <p>If you're still facing problems, perhaps try using another installation
-    method (HINT: if you're on Windows, use the Windows installer instead).
+    method (HINT: if you're on Windows or using OSX on a Mac, use the installer
+    for the appropriate platform instead).
     As a last resort why not see if anyone can help you in the
     <a href="/en/discuss">discussions</a>.</p>
     </div>

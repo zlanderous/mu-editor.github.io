@@ -39,3 +39,34 @@ Once the disk image is open, follow the steps illustrated below to install Mu.
   editor.</p>
   <img src="/img/en/howto/macos3.png" alt="Mac OSX installer step 3" class="img-responsive center-block img-rounded"/>
 </div>
+
+<div class="panel panel-warning">
+    <div class="panel-heading"><h3 class="panel-title">THIS IS BETA SOFTWARE!</h3></div>
+    <div class="panel-body">
+    <p>Mu is in the closing stages of a final 1.0 release. As a result it is
+    still considered BETA software and this reflects how the installer
+    currently works. Put simply, we currently don't sign the installer so
+    OSX complains about Mu coming from an unknown publisher. When the Mu
+    1.0 is finally we won't have this issue.</p>
+
+    <p>We've outlined the extra steps needed to help OSX start Mu for the first
+    time (you'll never have to repeat this step unless you re-install another
+    beta version of Mu).</p>
+
+    <p>Once Mu is installed, as per the steps above, open the "Applications"
+    folder, find the "mu-editor" icon then <strong>while holding down the
+    "ctrl" key, click the icon</strong> to display the menu shown below:</p>
+    <img src="/img/en/howto/beta/osx_beta1.png" alt="CTRL-click" class="img-responsive center-block img-rounded movie"/><br/>
+
+    <p>Click the "open" item on the menu.</p>
+
+    <p>At this point, OSX will "verify" Mu, as shown below:</p>
+    <img src="/img/en/howto/beta/osx_beta2.png" alt="Verify Mu" class="img-responsive center-block img-rounded movie"/><br/>
+
+    <p>Finally, an alert (shown below) will appear. To actually launch Mu click
+    on the "Open" button.</p>
+    <img src="/img/en/howto/beta/osx_beta3.png" alt="Click Open" class="img-responsive center-block img-rounded movie"/><br/>
+    <p><strong>These steps can take some time as OSX checks the Mu package, but
+    you'll only ever have to do them once.</strong></p>
+    </div>
+</div>
