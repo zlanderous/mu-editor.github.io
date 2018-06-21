@@ -13,6 +13,10 @@ If you're on Windows and would rather not type commands you should use the
 Mac and want to use the simple drag-and-drop installer instead, you should use
 the [OSX installer for Mu](install_macos).
 
+We recommend you run the following commands in a
+[virtualenv](https://pypi.org/project/virtualenv/)
+or other means of isolating your Python environment.
+
 At your OS's command prompt (see below) type the following command:
 
 ```
@@ -81,7 +85,7 @@ using:
 
 When `pip` installs software it doesn't automatically create a shortcut or menu
 item for you. Happily, someone has created a utility called `shortcut` to do
-this for you.
+this for you if you've not isolated Mu in a virtualenv.
 
 Simply use `pip` to install `shortcut` and then use `shortcut` on Mu:
 
