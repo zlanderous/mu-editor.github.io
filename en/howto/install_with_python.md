@@ -91,5 +91,5 @@ Simply use `pip` to install `shortcut` and then use `shortcut` on Mu:
 
 ```
 pip3 install shortcut
-shortcut mu
+shortcut mu-editor
 ```
