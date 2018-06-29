@@ -16,7 +16,7 @@ Mu will run on any machine running macOS version 10.10 Yosemite or later. There 
 
 ## Step 2 - Open the Installer
 
-+ Open your Downloads folder - click "Go", "Downloads" on the Finder menu. 
++ Open your Downloads folder - click "Go", then "Downloads" on the Finder menu. 
 
 <div class="row">
   <img src="/img/en/howto/macos_go_downloads.png" alt="Mac OS open downloads" class="img-responsive center-block img-rounded"/>
