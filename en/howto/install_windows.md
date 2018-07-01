@@ -6,7 +6,8 @@ i18n: en
 
 # How to install Mu on Windows with the Official Installer 
 
-Installing Mu in Windows is super easy.
+Installing Mu in Windows is super easy (if you are a network administrator we
+recommend you [read the instructions at the bottom of the page](#admins)).
 
 <div class="row">
   <img src="/img/en/howto/windows_mu_installer.gif" alt="mu windows installer" class="img-responsive center-block img-rounded movie"/>
@@ -55,9 +56,8 @@ There is also [advice on Microsoft's website](https://support.microsoft.com/en-u
 
 + Double-click the installer to run it.
 
-<div class="panel panel-warning">
-    <div class="panel-heading"><h3 class="panel-title">THIS IS BETA SOFTWARE!</h3></div>
-    <div class="panel-body">
+<div class="alert alert-warning" role="alert">
+    <h3>THIS IS BETA SOFTWARE!</h3>
     <p>Mu is in the closing stages of a final 1.0 release. As a result it is
     still considered BETA software and this reflects how the installer
     currently works.</p>
@@ -80,7 +80,6 @@ There is also [advice on Microsoft's website](https://support.microsoft.com/en-u
     <p>The message will change giving you more information about the installer and display a "Run anyway" button. Click
     "Run anyway".</p>
     <img src="/img/en/howto/beta/win10.3.png" alt="Click Run Anyway" class="img-responsive center-block img-rounded movie"/><br/>
-    </div>
 </div>
 
 ## Step 3 - Start the install
@@ -146,4 +145,49 @@ You can start Mu by clicking on the icon in the Start menu.
 <div class="row">
   <img src="/img/en/howto/windows_start_mu.png" alt="Windows start mu" class="img-responsive center-block img-rounded movie"/>
   <br/>
+</div>
+
+<div id="admins" class="panel panel-warning">
+    <div class="panel-heading"><h3 class="panel-title"><strong>ATTENTION NETWORK ADMINISTRATORS</strong></h3></div>
+    <div class="panel-body">
+    <p>If you are a network administrator who needs to install Mu on
+    many machines we'd like to answer a couple of common queries and provide
+    some technical context and information:</p>
+
+    <dl>
+        <dt>Why is the installer a <code>.exe</code> rather than an MSI?</dt>
+        <dd>In 2015 Microsoft announced that, while MSI won't go away any time
+        soon, they want developers to move onto other, more modern, packaging
+        solutions. We use a simple and easy to use
+        <a href="https://pynsist.readthedocs.io/en/latest/">packaging
+        system</a> which allows us to automatically and reliably create 
+        installers with zero manual intervention.</dd>
+        <dt>Why is the default install per-user rather than system wide?</dt>
+        <dd>Engineers at Microsoft have
+        <a href="https://twitter.com/zooba/status/1013445957290061824">advised
+        us</a> that per-user is the preferred for the following reasons:
+            <ul>
+                <li>Non-admin users can use the installer.</li>
+                <li>Such installations keep users isolated from each other.</li>
+                <li>Per-user installation means security and reliability
+                problems encountered by running as admin are avoided.</li>
+            </ul>
+        For more information about installation contexts, please see
+        <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd765197(v=vs.85).aspx">this article on Microsoft's website</a>.
+        </dd>
+
+    </dl>
+    <p><strong>We understand that, as a system administrator, you know what
+    you're doing and simply want to install Mu, system wide, on all the
+    machines under your control.</strong> In this case, you need
+    to run the installer with the following flags:
+    <code>mu-editor_win64.exe /S /AllUsers</code></p>
+
+    <p>The <code>/S</code> flag tells the installer to work in "silent" mode
+    (i.e. you won't see the windows shown in the screenshots above) and the
+    <code>/AllUsers</code> flag makes Mu available to all users of the system 
+    (i.e. it's installed "system wide").</p>
+    <p>If you encounter problems or wish to give feedback, please
+    <a href="/en/discuss">get in touch</a>.</p>
+    </div>
 </div>
