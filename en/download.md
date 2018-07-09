@@ -33,8 +33,8 @@ Each option is outlined below:
       <img src="/img/windows_logo.png" alt="Windows Logo">
       <div class="caption">
         <h3>Windows Installer</h3>
-        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.beta.16/mu-editor_beta16_win32.exe" class="btn btn-primary" role="button">32-bit</a>
-        <a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.beta.16/mu-editor_beta16_win64.exe" class="btn btn-primary" role="button">64-bit</a>
+        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.beta.17/mu-editor_beta17_win32.exe" class="btn btn-primary" role="button">32-bit</a>
+        <a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.beta.17/mu-editor_beta17_win64.exe" class="btn btn-primary" role="button">64-bit</a>
         <a href="/en/howto/install_windows" class="btn btn-default" role="button">Instructions</a></p>
       </div>
     </div>
@@ -44,7 +44,7 @@ Each option is outlined below:
       <img src="/img/apple_logo.png" alt="Apple Logo">
       <div class="caption">
         <h3>Mac OSX Installer</h3>
-        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.beta.16/mu-editor_beta16_osx.dmg" class="btn btn-primary" role="button">Download</a>
+        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.beta.17/mu-editor_beta17_osx.dmg" class="btn btn-primary" role="button">Download</a>
         <a href="/en/howto/install_macos" class="btn btn-default" role="button">Instructions</a></p>
       </div>
     </div>

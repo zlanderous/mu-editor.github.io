@@ -8,7 +8,7 @@ i18n: en
 
 Installing Mu on macOS is super easy.
 
-Mu will run on any machine running macOS version 10.10 Yosemite or later. There is [advice on Apple's website](https://support.apple.com/en-us/HT201260) on how to check your macOS version.
+Mu will run on any machine running macOS version 10.11 El Capitan or later. There is [advice on Apple's website](https://support.apple.com/en-us/HT201260) on how to check your macOS version.
 
 ## Step 1 - Download Mu Installer
 
@@ -30,7 +30,9 @@ Mu will run on any machine running macOS version 10.10 Yosemite or later. There 
   <br/>
 </div>
 
-When you open the installer your computer will verify it is not corrupted (this may take a couple of minutes).
+When you open the installer you'll be asked to accept the software license
+agreement and then your computer will verify the package is not corrupted (this
+may take a couple of minutes).
 
 ## Step 3 - Install Mu
 
