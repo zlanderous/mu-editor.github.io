@@ -106,6 +106,9 @@ Review the license and click "Agree".
 
 Select if you want to install Mu for all users, or just yourself and click "Next".
 
+Please note, if your user account does not have administrative rights this step might not appear on your installation process.
+If it does, the installer might only work if you select the "Install just for me" option.
+
 <div class="row">
   <img src="/img/en/howto/winstall3.png" alt="Windows installer step 3" class="img-responsive center-block img-rounded movie"/>
   <br/>
