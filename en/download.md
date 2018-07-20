@@ -6,17 +6,6 @@ i18n: en
 
 # Download Mu
 
-<div class="panel panel-warning">
-    <div class="panel-heading"><h3 class="panel-title">THIS IS BETA SOFTWARE!</h3></div>
-    <div class="panel-body">
-    <p>Mu is in the closing stages of a final 1.0 release. As a result it is
-    still considered BETA software and this reflects how the installer
-    currently works and you may encounter bugs (<a href="/en/howto/bugs">please report them!</a>).
-    Please read the instructions for your installer for more information.</p>
-    </div>
-</div>
-
-
 There are many ways to install Mu. The simplest is to download the official
 installer for Windows or Mac OSX. If you're a more advanced user you can use
 Python's built-in `pip` tool. Some Linux distributions come with Mu packaged
@@ -33,8 +22,8 @@ Each option is outlined below:
       <img src="/img/windows_logo.png" alt="Windows Logo">
       <div class="caption">
         <h3>Windows Installer</h3>
-        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.rc.1/mu-editor_rc1_win32.exe" class="btn btn-primary" role="button">32-bit</a>
-        <a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.rc.1/mu-editor_rc1_win64.exe" class="btn btn-primary" role="button">64-bit</a>
+        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0/mu-editor_1.0_win32.exe" class="btn btn-primary" role="button">32-bit</a>
+        <a href="https://github.com/mu-editor/mu/releases/download/v1.0.0/mu-editor_1.0_win64.exe" class="btn btn-primary" role="button">64-bit</a>
         <a href="/en/howto/install_windows" class="btn btn-default" role="button">Instructions</a></p>
       </div>
     </div>
@@ -44,7 +33,7 @@ Each option is outlined below:
       <img src="/img/apple_logo.png" alt="Apple Logo">
       <div class="caption">
         <h3>Mac OSX Installer</h3>
-        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0.rc.1/mu-editor_rc1_osx.dmg" class="btn btn-primary" role="button">Download</a>
+        <p><a href="https://github.com/mu-editor/mu/releases/download/v1.0.0/mu-editor_1.0_osx.dmg" class="btn btn-primary" role="button">Download</a>
         <a href="/en/howto/install_macos" class="btn btn-default" role="button">Instructions</a></p>
       </div>
     </div>

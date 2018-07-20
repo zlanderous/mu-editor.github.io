@@ -57,16 +57,11 @@ There is also [advice on Microsoft's website](https://support.microsoft.com/en-u
 + Double-click the installer to run it.
 
 <div class="alert alert-warning" role="alert">
-    <h3>THIS IS BETA SOFTWARE!</h3>
-    <p>Mu is in the closing stages of a final 1.0 release. As a result it is
-    still considered BETA software and this reflects how the installer
-    currently works.</p>
+    <h3>THIS IS SOFTWARE FROM THE INTERNET!</h3>
     
-    <p>Put simply, we currently don't sign the installer so
-    Windows complains about Mu coming from an unknown publisher. When the Mu
-    1.0 is finally released the installer won't have this issue.</p>
+    <p>Windows complains about Mu coming from the internet.</p>
 
-    <p>In any case, we've outlined the extra steps needed to help Windows
+    <p>As a result, we've outlined the extra steps needed to help Windows
     install Mu for both Windows 7 and Windows 10 (other versions of Windows
     will be similar).</p>
 

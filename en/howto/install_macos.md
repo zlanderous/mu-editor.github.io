@@ -60,34 +60,14 @@ Mu will install into the Applications folder on your Mac.
   <br/>
 </div>
 
-<div class="panel panel-warning">
-    <div class="panel-heading"><h3 class="panel-title">THIS IS BETA SOFTWARE!</h3></div>
-    <div class="panel-body">
-    <p>Mu is in the closing stages of a final 1.0 release. As a result it is
-    still considered BETA software and this reflects how the installer
-    currently works.</p> 
-    
-    <p>Put simply, we currently don't sign the installer so
-    OSX complains about Mu coming from an unknown publisher. When the Mu
-    1.0 is finally we won't have this issue.</p>
+Double-click on the Mu icon. You'll see a dialog to check you want to open
+Mu. Click "Open":
 
-    <p>We've outlined the extra steps needed to help OSX start Mu for the first
-    time (you'll never have to repeat this step unless you re-install another
-    beta version of Mu).</p>
-
-    <p>Hold down the "ctrl" key, click the Mu icon</strong> to display the menu shown below:</p>
-    <img src="/img/en/howto/beta/osx_beta1.png" alt="CTRL-click" class="img-responsive center-block img-rounded movie"/><br/>
-
-    <p>Click "Open".</p>
-
-    <p>OSX will "verify" Mu.</p>
-    <img src="/img/en/howto/beta/osx_beta2.png" alt="Verify Mu" class="img-responsive center-block img-rounded movie"/><br/>
-
-    <p>To launch Mu click "Open".</p>
-    <img src="/img/en/howto/beta/osx_beta3.png" alt="Click Open" class="img-responsive center-block img-rounded movie"/><br/>
-    <p><strong>This can take some time as OSX checks the Mu package, but you'll only ever have to do them once.</strong></p>
-    </div>
+<div class="row">
+  <img src="/img/en/howto/open_mu_osx.png" alt="Click to Open" class="img-responsive center-block img-rounded"/><br/>
 </div>
+
+**This can take some time as OSX checks the Mu package, but you'll only ever have to do it once.**
 
 + Next time you launch Mu you will be able to just double click the Mu icon.
 
