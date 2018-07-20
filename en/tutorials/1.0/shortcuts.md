@@ -31,7 +31,7 @@ work!
     <dt>CTRL H</dt>
     <dd>Display help (the same as clicking "Help").</dd>
     <dt>CTRL Q</dt>
-    <dd>Quit Mu (the smae as clicking "Quit").</dd>
+    <dd>Quit Mu (the same as clicking "Quit").</dd>
 </dl>
 
 ## Mode Related Buttons
