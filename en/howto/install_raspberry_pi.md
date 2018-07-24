@@ -11,18 +11,26 @@ If you're using the Raspberry Pi Foundation's official
 operating system you should use your preferred package management application
 and install `mu-editor`.
 
-## Step 1
+## Step 1 - Open a Terminal
 
-Open a terminal by selecting Accessories and Terminal from the menu
++ Open a terminal by selecting Accessories and Terminal from the menu
 
 <div class="row">
   <img src="/img/en/howto/pi_open_terminal.png" alt="pi open terminal" class="img-responsive center-block img-rounded movie"/>
   <br/>
 </div>
 
-## Step 2
+## Step 2 - Install Mu
 
-Enter the following command to download and install Mu.
+Enter the following commands to:
+
++ Update the repositories.
+
+```bash
+sudo apt-get update
+```
+
++ Download and install Mu.
 
 ```bash
 sudo apt-get install mu
@@ -33,4 +41,11 @@ sudo apt-get install mu
   <br/>
 </div>
 
-Open Mu from by selecting it from the Programming menu.
+## Step 3 - Start Mu
+
++ Open Mu by selecting it from the Programming menu.
+
+<div class="row">
+  <img src="/img/en/howto/pi_open_mu.png" alt="pi open mu" class="img-responsive center-block img-rounded movie"/>
+  <br/>
+</div>

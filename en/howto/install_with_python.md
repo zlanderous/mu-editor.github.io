@@ -8,6 +8,8 @@ i18n: en
 If you already have [Python3](https://python.org/) installed on your Windows,
 OSX or Linux machine then it is easy to install Mu with Python's
 built-in package manager, [`pip`](https://pip.pypa.io/en/stable/installing/).
+**Please note: this method does not currently work on Raspberry Pi** (use
+[these instructions instead](/en/howto/install_raspberry_pi)).
 If you're on Windows and would rather not type commands you should use the
 [Windows installer for Mu](install_windows) instead. If you're using OSX on a
 Mac and want to use the simple drag-and-drop installer instead, you should use
