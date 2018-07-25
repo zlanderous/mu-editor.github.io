@@ -8,10 +8,9 @@ i18n: en
 
 If you're using the Raspberry Pi Foundation's official
 [Raspbian](https://www.raspberrypi.org/downloads/raspbian/)
-operating system you should use your preferred package management application
-and install `mu-editor`.
+operating system you can use the **Recommended Software** application to install **mu**.
 
-## Step 1 - Open a Terminal
+## Step 1 - Update your Raspberry Pi
 
 + Open a terminal by selecting Accessories and Terminal from the menu
 
@@ -20,24 +19,33 @@ and install `mu-editor`.
   <br/>
 </div>
 
-## Step 2 - Install Mu
-
-Enter the following commands to:
-
-+ Update the repositories.
++ Enter the following commands to update Raspbian
 
 ```bash
 sudo apt-get update
+sudo apt-get dist-upgrade
 ```
 
-+ Download and install Mu.
+## Step 2 - Install Mu
 
-```bash
-sudo apt-get install mu
-```
++ Open the Recommended Software application from the Preferences menu.
 
 <div class="row">
-  <img src="/img/en/howto/pi_install_mu.gif" alt="pi install mu" class="img-responsive center-block img-rounded movie"/>
+  <img src="/img/en/howto/pi_open_rec_software.png" alt="pi open recommended software" class="img-responsive center-block img-rounded movie"/>
+  <br/>
+</div>
+
++ Select Mu from the list of applications to install.
+
+<div class="row">
+  <img src="/img/en/howto/pi_rec_software_select_annotated.png" alt="select mu" class="img-responsive center-block img-rounded movie"/>
+  <br/>
+</div>
+
++ Click OK to start the installation process.
+
+<div class="row">
+  <img src="/img/en/howto/pi_rec_software_install.png" alt="click ok" class="img-responsive center-block img-rounded movie"/>
   <br/>
 </div>
 
@@ -48,4 +56,12 @@ sudo apt-get install mu
 <div class="row">
   <img src="/img/en/howto/pi_open_mu.png" alt="pi open mu" class="img-responsive center-block img-rounded movie"/>
   <br/>
+</div>
+
+<div id="admins" class="panel panel-warning">
+  <div class="panel-heading"><h3 class="panel-title"><strong>Install from the command line</strong></h3></div>
+  <div class="panel-body">
+  <p>You can also install Mu from the command line using the command:</p>
+  <p><code>sudo apt-get install mu-editor</code></p>
+  </div>
 </div>
