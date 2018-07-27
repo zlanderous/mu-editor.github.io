@@ -14,9 +14,9 @@ recommend you [read the instructions at the bottom of the page](#admins)).
   <br/>
 </div>
 
-Mu works on Window 7, 8 and 10 in 32 bit and 64 bit. Its a good idea to make sure your system to up-to-date with all Windows updates.
+Mu works on Window 7, 8 and 10 in 32 bit and 64 bit. It's a good idea to make sure your system to up-to-date with all Windows updates.
 
-If you in an educational setting you may need to get your system administrator to run the installer for you.
+If you are in an educational setting you may need to get your system administrator to run the installer for you.
 
 ## Step 1 - Download Mu Installer
 
