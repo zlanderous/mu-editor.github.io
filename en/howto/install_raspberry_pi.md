@@ -31,7 +31,7 @@ sudo apt-get dist-upgrade
 + Open the Recommended Software application from the Preferences menu.
 
 <div class="row">
-  <img src="/img/en/howto/pi_open_rec_software.png" alt="pi open recommended software" class="img-responsive center-block img-rounded movie"/>
+  <img src="/img/en/howto/pi_rec_software.png" alt="pi open recommended software" class="img-responsive center-block img-rounded movie"/>
   <br/>
 </div>
 
