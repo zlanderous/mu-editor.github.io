@@ -16,6 +16,8 @@ author :
   twitter : ntoll
 plugins:
   - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -28,7 +30,7 @@ plugins:
 production_url : http://codewith.mu
 github-fork-path: https://github.com/mu-editor/mu
 
-gems: ["jekyll-sitemap"]
+gems: ["jekyll-sitemap", "jekyll-redirect-from"]
 
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
