@@ -30,7 +30,7 @@ whitelist:
 production_url : http://codewith.mu
 github-fork-path: https://github.com/mu-editor/mu
 
-gems: ["jekyll-sitemap", "jekyll-redirect-from"]
+gems: ["jekyll-sitemap"]
 
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
