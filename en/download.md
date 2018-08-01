@@ -13,7 +13,8 @@ already (and you should use your OS's package manager to install it). Finally,
 if you're on Raspbian (the version of Linux for Raspberry Pi) you can install
 Mu as a package.
 
-Each option is outlined below:
+If you're a developer, you can find the source code
+[on GitHub](https://github.com/mu-editor/mu).
 
 
 <div class="row">
