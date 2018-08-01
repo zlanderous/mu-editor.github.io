@@ -14,6 +14,8 @@ author :
   name : Nicholas H.Tollervey
   github : mu-editor
   twitter : ntoll
+plugins:
+  - jekyll-redirect-from
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
