@@ -69,6 +69,28 @@ extracted Mu and double click on the `Launch Mu.bat` file to start. **It may
 take some time for Mu to launch** because of the relative slowness of
 pendrives.
 
+Sometimes, depending upon the machine you're using, Windows may say that it is
+protecting your PC from an unrecognised application.
+
+<div class="row">
+  <img src="/img/en/howto/beta/win10.2.png" alt="Windows protector" class="img-responsive center-block img-rounded movie"/>
+  <br/>
+</div>
+
+The solution is to click on the "More info" link:
+
+<div class="row">
+  <img src="/img/en/howto/beta/win10.2_annotated.png" alt="Windows protector" class="img-responsive center-block img-rounded movie"/>
+  <br/>
+</div>
+
+Then click on the "Run anyway" button.
+
+<div class="row">
+  <img src="/img/en/howto/beta/win10.3.png" alt="Windows protector" class="img-responsive center-block img-rounded movie"/>
+  <br/>
+</div>
+
 ## Mac OSX
 
 You simply need to [download](/en/download) the existing OSX installer, copy it
