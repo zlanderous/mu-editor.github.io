@@ -21,8 +21,10 @@ bundle install
 jekyll serve --host 0.0.0.0 --force_polling
 ```
 
-You can then see the output pages at `http://127.0.0.1:4000`
+You can then see the output pages at `http://127.0.0.1:4000`:
 
+```
 bundle exec jekyll serve
+```
 
 The "nortonsw" file is to ensure that the product is accepted by the Norton virus scanner.
